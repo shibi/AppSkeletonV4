@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AppSkeletonV4</string>
+    <string name="enter_valid_username">Enter valid username</string>
+    <string name="enter_valid_password">Enter valid password</string>
+    <string name="full_name_label">Full name</string>
+    <string name="hint_fullname">full name</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_recent">Packages</string>
+    <string name="menu_profile">Profile</string>
+    <string name="new_customer_title">New Customer</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_age">Age</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="services_title">Services</string>
+    <string name="package_label">Package</string>
+
+    <string name="title_packages">Packages</string>
+
+
+    <string name="rb_cus_pack_package">Package</string>
+    <string name="rb_cus_pack_regular_customer">Regular Customer</string>
+    <string name="rb_cus_pack_walking_customer">Walking Customer</string>
+    <string name="select_package">Select package</string>
+    <string name="package_details">Package details</string>
+    <string name="customer_id_notfound">Customer id not found!</string>
+    <string name="cash_label">CASH</string>
+    <string name="online_label">online</string>
+    <string name="no_data_found">No data found</string>
+    <string name="request_relogin">Credentials changed. Please login again</string>
+
+</resources>
