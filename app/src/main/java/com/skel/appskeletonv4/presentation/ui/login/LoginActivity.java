@@ -38,6 +38,8 @@ public class LoginActivity extends SharedActivity {
 
         appDialogs = new AppDialogs(this);
 
+
+
         et_username = findViewById(R.id.et_username);
         et_password = findViewById(R.id.et_password);
         btn_login = findViewById(R.id.btn_login);
