@@ -5,6 +5,7 @@ import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.skel.appskeletonv4.data.localdb.AppDatabase;
+import com.skel.appskeletonv4.data.remotedb.api.ApiGenerator;
 import com.skel.appskeletonv4.data.remotedb.api.ApiService;
 import com.skel.appskeletonv4.data.remotedb.dto.branchProfile.BranchProfileData;
 import com.skel.appskeletonv4.data.remotedb.dto.branchProfile.GetBranchProfileDataResponse;
@@ -18,6 +19,8 @@ import com.skel.appskeletonv4.domain.repository.IBranchRepository;
 
 import java.util.List;
 
+import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.Response;
 
 public class BranchRepository extends SharedRepository  implements IBranchRepository {
@@ -27,13 +30,15 @@ public class BranchRepository extends SharedRepository  implements IBranchReposi
     }
 
 
+    /**
+     * check api call portion
+     * */
     @Override
     public LiveData<Resource<BranchLoginDTO>> branchLogin(String email, String password) {
         MediatorLiveData<Resource<BranchLoginDTO>> statusLiveData = new MediatorLiveData<>();
 
         appExecutors.networkIO().execute(()->{
             try{
-
                 Response<BranchLoginDTO> response = webService.branchLogin(email, password).execute();
                 ApiResponse<BranchLoginDTO> apiResponse = new ApiResponse<>(response);
 
