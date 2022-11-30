@@ -1,6 +1,7 @@
 package com.skel.appskeletonv4.presentation.ui.dashboard;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -31,7 +32,7 @@ public class DashboardActivity extends SharedActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(Bundle savedState) {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

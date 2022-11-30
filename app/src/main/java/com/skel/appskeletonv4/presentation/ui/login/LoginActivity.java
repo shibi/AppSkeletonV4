@@ -1,6 +1,7 @@
 package com.skel.appskeletonv4.presentation.ui.login;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.EditText;
 
 import androidx.appcompat.widget.AppCompatButton;
@@ -34,7 +35,7 @@ public class LoginActivity extends SharedActivity {
     }
 
     @Override
-    public void initViews() {
+    public void initViews(Bundle savedState) {
 
         appDialogs = new AppDialogs(this);
 

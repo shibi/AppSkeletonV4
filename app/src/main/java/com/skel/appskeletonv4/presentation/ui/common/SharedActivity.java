@@ -21,7 +21,7 @@ public abstract class SharedActivity extends AppCompatActivity implements IShare
 
             initObservers();
 
-            initViews();
+            initViews(savedInstanceState);
 
         }catch (Exception e){
             e.printStackTrace();
